@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Cashflow S.A. | Enquiry</title>
+    <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+    <style>
+form {
+  border-radius: 5px;
+  background-color: dodgerblue;
+  padding: 20px;
+}
+
+label {display: block;}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=chechbox] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+input[type=radio] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=tel] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.enquiry{
+    box-sizing: border-box;
+    background-color: lightskyblue;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1 style="color: deepskyblue;"> Digital Cashflow S.A.</h1>
+        <img src="c:\Users\Student\OneDrive - ADvTECH Ltd\Ffffff\file_00000000bed481fab16d5da459ef903f.png" alt="Digital Cashflow S.A. Logo" style="max-width: 200px;height: 100px;">
+        <p style="color: white; font-size: 22pt; font-weight: bold;"> Building Knowledge. Creating Opportunities. Growing Wealth.</p>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="services.html">Services/Products</a> |
+            <a href="enquiry.html">Enquiry</a> |
+            <a href="contact.html">Contact</a> 
+        </nav>
+    </header>
+
+    <main class="enquiry-page">
+
+        <section class="enquiry">
+            <h2 style="text-align: center;">Make an Enquiry</h2>
+
+            <p>Have a question about our services? Complete the form below and provide us with your enquiry.</p>
+        </section>
+
+        <section>
+            <h3 style="text-align: center;">Enquiry Form</h3>
+
+            <form action="#" method="post">
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <p style="font-weight: bold; margin-top: 20px;">
+                        <label for="fullName">Full Name:</label><br>
+                        <input type="text"
+                               id="fullName"
+                               name="fullName"
+                               required>
+                    </p>
+
+                    <p style="font-weight: bold; margin-top: 20px;">
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel"
+                               id="phone"
+                               name="phone">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Enquiry Details</legend>
+
+                    <p style="font-weight: bold; margin-top: 20px;">
+                        <label for="services">What are you interested in?</label><br>
+
+                        <select id="services" name="services" required>
+                            <option value="">-- Select an option --</option>
+                            <option value="investment">Investment Education</option>
+                            <option value="trading">Trading Education</option>
+                            <option value="financial-markets">
+                                Financial Market Lessons
+                            </option>
+                            <option value="strategies">
+                                Investment and Trading Strategies
+                            </option>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+
+                    <p style="font-weight: bold; margin-top: 20px;">
+                        <label for="subject">Subject:</label><br>
+                        <input type="text"
+                               id="subject"
+                               name="subject"
+                               required>
+                    </p>
+
+                    
+                    <p style="font-weight: bold; margin-top: 20px;">
+                        <label for="message">Your Enquiry:</label><br>
+                        <textarea id="message"
+                                  name="subject"
+                                  rows="8"
+                                  cols="40"
+                                 required></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+
+                    <p style="font-weight: bold;">
+                        <input type="radio"
+                               id="contactEmail"
+                               name="contactMethod"
+                               value="email"
+                               checked>
+
+                       <label for="contactEmail">Email</label>     
+                    </p>
+
+                    
+                    <p style="font-weight: bold;">
+                        <input type="radio"
+                               id="contactPhone"
+                               name="contactMethod"
+                               value="phone"
+
+                       <label for="contactPhone">Phone</label>     
+                    </p>
+                </fieldset>
+
+                <p style="font-weight: bold;">
+                    <input type="checkbox"
+                           id="updates"
+                           name="updates"
+                           value="yes"
+
+                    <label for="updates">
+                        I would like to receive updates about Digital Cashflow S.A.
+                    </label>     
+                </p>
+
+                <P style="font-weight: bold;">
+                    <button type="submit">Submit Enquiry</button>
+                    <button type="reset">Clear</button>
+                </P>
+
+            </form>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <p style="font-size: 20px; color: white;">&copy; 2026 Digital Cashflow S.A. All rights reserved.</p>
+    </footer>
+
+    </body>
+    </html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <title>Investment and Trading Services | Digital Cashflow S.A.</title>
+
+    <meta name="description" content="Explore investment education, trading lessons, financial market knowledge and investment strategies offered by Digital Cashflow S.A.">
+
+    <meta name="keywords" content="investment education, trading education, financial market lessons, investment strategies, cryptocurrency">
+
+    <meta name="author" content="Digital Cashflow S.A.">
+    
+   
+     <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+     <script src="JS\search.js" ></script>
+
+     <style>
+.container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 20px;
+  gap: 20px;
+}
+.container div {
+  background-color: dodgerblue;
+  color: white;
+  padding: 10px;
+  font-size: 30px;
+  text-align: left;
+}
+
+.interested{
+    background-color: #6A89A7;
+    display: block;
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.services-page img{
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+
+.service-search {
+    padding: 30px;
+    text-align: center;
+    background-color: #384959;
+}
+
+.service-search label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.service-search input,
+.service-search select {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin: 8px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#searchMessage,
+#noResults {
+    font-size: 16px;
+    color: #333;
+}
+
+.service-card[hidden] {
+    display: none;
+}
+
+
+.gallery-section {
+    padding: 30px;
+    text-align: center;
+    background-color: #6A89A7;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.03);
+}
+
+.lightbox[hidden] {
+    display: none;
+}
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 75vh;
+    object-fit: contain;
+}
+
+.lightbox p {
+    color: white;
+    font-size: 18px;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1 style="color: deepskyblue;">Digital Cashflow S.A.</h1>
+        <img src="c:\Users\Student\OneDrive - ADvTECH Ltd\Ffffff\file_00000000bed481fab16d5da459ef903f.png" alt="Digital Cashflow S.A. Logo" style="max-width: 200px;height: 100px; font-weight: bold">
+        <p style="color: white; font-size: 20pt; font-weight: bold;"> Building Knowledge. Creating Opportunities. Growing Wealth.</p>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="services.html">Services/Products</a> |
+            <a href="enquiry.html">Enquiry</a> |
+            <a href="contact.html">Contact</a> 
+        </nav>
+    </header>
+
+    <main class="services-page">
+
+        <section>
+
+        <div class="service-search">
+            <label for="serviceSearch">Search our services:</label>
+            <input type="text" id="serviceSearch"
+           placeholder="Try investment, trading, risk management...">
+
+          <label for="serviceFilter">Filter by category:</label>
+          <select id="serviceFilter">
+          <option value="all">All Services</option>
+          <option value="investment">Investment Education</option>
+          <option value="trading">Trading Education</option>
+          <option value="strategies">Investment &amp; Trading Strategies</option>
+          </select>
+
+        <p id="searchMessage" aria-live="polite"></p>
+        </div>
+
+         <div class="container">
+             <div class="services-card" data-category="invest"> 
+             <h3 style="text-align: center;">Investement Education</h3>
+            <img src="Images/education-scholarship-student-icon-investment-money-academic_488220-67805.avif" alt="Investment Education" style="max-width:200px;height:150px;">
+
+            <p>Our investemnt education helps individuals understand the fundamentals of investing and develop knowledge that can support informed financial decision-making.</p>
+        
+             <ul style="text-align: left; font-size: 17px; margin-top: 15px; list-style-position: inside;">
+                <li>Introduction to investing</li>
+                <li>Understanding financnial markets</li>
+                <li>Investment principles</li>
+                <li>Risk and reward concepts</li>
+             </ul>
+            </div>
+
+             <div class="services-card" data-category="trading">
+             <h4 style="text-align:center;">Trading Education</h4>
+            <img src="Images/Untitled-design-2024-12-02T112621.343.jpg" alt="Trading Education" style="max-width:300px;height:150px;">
+
+            <p>Our trading education focuses on helping individuals understand trading concepts, market behaviour and the importance of following a structured approach.</p>
+        
+             <ul style="text-align: left; font-size: 17px; margin-top: 15px; list-style-position: inside;">
+                <li>Trading fundamentals</li>
+                <li>Understanding market movements</li>
+                <li>Trading strategies</li>
+                <li>Risk management concepts</li>
+             </ul>
+            </div>
+
+             <div class="services-card" data-category="strategies">
+             <h5 style="text-align: center;">Investment & Trading Strategies</h5>
+            <img src="Images/Thumbnail__497694705.jpg" alt="Investment and Trading Strategies" style="max-width:300px ;height:150px ;">
+
+            <p>Digital Cashflow S.A focuses on systematic strategies that are designed around repeateable processes. Strategies are reviewed when necessary to identify areas for improvement.</p>
+
+            <p>When performing is not expected, profit and loss results can be reviewd to identify possible causes and improve the process.</p></div>  
+             </div>
+            </div>
+
+            <p id="noResults" hidden>
+                No matching services found, try another search.
+            </p>
+        </section>
+
+        
+<section class="gallery-section">
+    <h2>Our Gallery</h2>
+    <p>Explore financial education, investment and trading.</p>
+
+    <div class="gallery">
+        <img src="Images/education-scholarship-student-icon-investment-money-academic_488220-67805.avif"
+             alt="Investment Education"
+             class="gallery-image">
+
+        <img src="Images/Untitled-design-2024-12-02T112621.343.jpg"
+             alt="Trading Education"
+             class="gallery-image">
+
+        <img src="Images/Thumbnail__497694705.jpg"
+             alt="Investment and Trading Strategies"
+             class="gallery-image">
+    </div>
+</section>
+
+<div id="lightbox" class="lightbox" role="dialog"
+     aria-modal="true" aria-label="Enlarged image" hidden>
+    <button id="closeLightbox" class="close-lightbox"
+            type="button" aria-label="Close image">&times;</button>
+
+    <img id="lightboxImage" src="" alt="">
+    <p id="lightboxCaption"></p>
+</div>
+
+        
+        <section class="interested">
+            <h7 style="text-align: center; font-size:28px;">Interested in our services?</h7>
+
+            <p>If you would like more information about our services and educational offerings, submit an enquiry or contact us.</p>
+
+            <p>
+                <a href="enquiry.html">Make an enquiry</a>
+            </p>
+
+            <p>
+                <a href="contact.html">Contact Us</a>
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p style="font-size: 20px; color: white;">&copy; 2026 Digital Cashflow S.A. All rights reserved.</p>
+    </footer>
+
+    <script src="JS\gallery.js"></script>
+    </body>
+    </html>

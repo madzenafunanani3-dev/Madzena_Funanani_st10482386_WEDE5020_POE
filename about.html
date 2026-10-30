@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About Us | Digital Cashflow S.A.</title>
+
+    <meta name="description" content="Learn about Digital Cashflow S.A., our vision, mission and commitment to financial education, investment knowledge and wealth creation.">
+
+    <meta name="keywords" content="about Digital Cashflow, financial education, investment knowledge, wealth creation, financial growth">
+
+    <meta name="author" content="Digital Cashflow S.A.">
+
+    <link href="CSS/style.css" rel="stylesheet" type="text/css"/>
+    <script src="JS\search.js" ></script>
+
+    <style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: deepskyblue;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid #888;
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  color: navy;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.accordion {
+  background-color:  #6A89A7;
+  color: #384959;
+  cursor: pointer;
+  padding: 18px;
+  width: 50%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: skyblue; 
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #384959;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color:  #BDDDFC;
+  overflow: hidden;
+  width: 755px;
+  margin: 1px auto;
+
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1 style="color: deepskyblue;"> Digital Cashflow S.A.</h1>
+        <img src="c:\Users\Student\OneDrive - ADvTECH Ltd\Ffffff\file_00000000bed481fab16d5da459ef903f.png" alt="Digital Cashflow S.A. Logo" style="max-width: 200px;height: 100px; font-weight: bold">
+        <p style="color: white; font-size: 20pt; font-weight: bold;"> Building Knowledge. Creating Opportunities. Growing Wealth.</p>
+
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About Us</a> |
+            <a href="services.html">Services/Products</a> |
+            <a href="enquiry.html">Enquiry</a> |
+            <a href="contact.html">Contact</a> 
+        </nav>
+    </header>
+
+    <!-- Trigger/Open The Modal -->
+<button id="myBtn" style="display: block;
+                          margin: 30px auto;
+                          font-size: 20px;
+                          font-weight: bold;
+                          color: white;
+                          background-color: dodgerblue;
+                          padding: 15px 20px;
+                          width: 200px;"
+                          >Open Modal
+</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Find more about our mission, vision, core principle, target audience and growth approach on this page.</p>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+    <main class="about-us">
+
+        <section class="about">
+            <h2 style="color: navy; font-size: 36px; margin-top: 15px;"> About Digital Cashflow S.A.</h2>
+            <img src="Images/0x0.webp" alt="Financial education" style="max-width:300px ;height:150px ;">
+            <p>Digital Cashflow S.A. is an online-focused business that aims to generate revenue through financial markets education, investing, trading and cryptocurrency. The business is committed to help individuals develip financial knowledge and understand  different opportunities within the financial markets.</p>
+            
+            <p>Our approach is based on education, discipline and the use of systematic and repeatable strategies. We believe that having the right knowledge and processes can help individuals make more informed financial decisions.</p>
+        </section>
+        </main>
+
+
+ <button class="accordion" style="display: block;margin: 20px auto; margin-bottom: 1px;">Our Vision</button>
+<div class="panel">
+  <p>Our vision is to create generational wealth and teach people how to maintain and grow it.</p>
+</div>
+
+<button class="accordion" style="display: block; margin: 20px auto;  margin-bottom: 1px;">Our Mission</button>
+<div class="panel">
+  <p>We aim to encourage continuous learning, responsible decision making and the development of repeatable financial processes.</p>
+</div>
+
+<button class="accordion" style="display: block; margin: 20px auto;  margin-bottom: 1px;">Core Principles</button>
+<div class="panel">
+
+  <ul>
+    <li>Knowledge</li>
+    <li>Discipline</li>
+    <li>Consistency</li>
+    <li>continuous Improvement</li>
+  </ul>
+</div>
+
+<button class="accordion" style="display: block; margin: 20px auto;  margin-bottom: 1px;">Target Audience</button>
+<div class="panel">
+  <p>Digital Cashflow S.A targets individuals who are interested in generating income online and achieveing financial independence.</p>
+</div>
+
+<button class="accordion" style="display: block; margin: 20px auto;  margin-bottom: 1px;">Approach To Growth</button>
+<div class="panel">
+  <p>We follow a systematic approach that focuses of creating repeatable processes</p>
+</div>
+
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+       if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
+          
+    <footer class="footer">
+        <p style="font-size: 20px; color: white;">&copy; 2026 Digital Cashflow S.A. All rights reserved.</p>
+    </footer>
+
+    </body>
+    </html>
